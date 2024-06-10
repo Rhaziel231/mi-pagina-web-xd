@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Periódico Mural Interactivo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Periódico Mural Interactivo</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#noticias">Noticias</a></li>
+            <li><a href="#eventos">Eventos</a></li>
+            <li><a href="#avisos">Avisos</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section id="noticias">
+            <h2>Noticias</h2>
+           
+            <div class="articulo" onclick="redireccionarPagina4()">
+                <h3>Nuevo juego de Supercell</h3>
+                <img src="imagen/descargar.jpg" alt="">
+                <p>Un nuevo juego llamado Squad busters esta siendo tendendcia entre los jugadores mobiles</p>
+            
+            </div>
+    
+        
+        <div class="articulo" onclick="redireccionarPagina3()">
+                <h3>Peluche en la zona arqueologica</h3>
+                <img src="imagen/peluche en aventuras.jpeg" alt="">
+                <p>Un pelcuhe fue encontrado tomandose fotos en los templos de ese lugar</p>
+            </div>
+        
+        </section>
+        <section id="eventos">
+            <h2>Eventos</h2>
+            <div class="articulo" >
+                <h3>Evento de canto</h3>
+                <img src="imagen/canto.jpeg" alt="">
+                <p>Jovenes compite en un evento de canto</p>
+            </div>
+            <div class="articulo" >
+                <h3>Proximamente expo coatza</h3>
+                <img src="imagen/images.jpg" alt="">
+                <p>Sera acerca una expo feria en coatzacoalcos veracruz el dia 1 de junio</p>
+            </div>
+        </section>
+        <section id="avisos">
+            <h2>Avisos</h2>
+            <div class="articulo" onclick="redireccionarPagina2()">
+                <h3>AViSOS</h3>
+                <p>GRACIAS POR AVISAR</p>
+                <img src="imagen/amigos.jpeg" alt="">
+            
+            </div>
+            <div class="articulo" onclick="redireccionarPagina()">
+                <h3>Aviso Se cierran los examenes de Moodle</h3>
+                <img src="imagen/ternurin.jpeg" alt="">
+                <p>Estudiantes del cobaev 42 NO PIERDAN SU TIEMPO Y EMPIECE A HACECR SUS EXAMENES</p>
+            
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Periódico Mural Interactivo</p>
+    </footer>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button" onclick="cerrarModal()">&times;</span>
+            <h3 id="modal-titulo"></h3>
+            <p id="modal-contenido"></p>
+        </div>
+    </div>
+
+    <script src="java.js"></script>
+</body>
+</html>
